@@ -26,4 +26,5 @@ entity Tests : managed {
   book    : Association to Books;
   country : Country;
   amount  : Integer;
+  test    : Integer;
 }

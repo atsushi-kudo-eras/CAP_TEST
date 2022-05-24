@@ -16,8 +16,14 @@ module.exports = (srv) => {
         if (affectedRows === 0)  req.error (409, "Sold out, sorry")
     })
 
-    srv.before ('READ', 'Test', each => {
-        console.log("=== hogehoge ===")
+    srv.after ('READ', 'Tests', each => {
+        console.log("=== READ, Tests ===")
+        if (each.stock > 111)  each.title += ' -- 11% discount!'
+        // each.amount = 1000
+    })
+
+    srv.before ('CREATE', 'Tests', each => {
+        console.log("=== CREATE, Tests ===")
         // if (each.stock > 111)  each.title += ' -- 11% discount!'
     })
 
