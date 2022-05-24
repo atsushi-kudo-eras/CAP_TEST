@@ -21,5 +21,9 @@ entity Orders : managed {
   amount  : Integer;
 }
 
-entity Test : managed {
+entity Tests : managed {
+  key ID  : UUID;
+  book    : Association to Books;
+  country : Country;
+  amount  : Integer;
 }
