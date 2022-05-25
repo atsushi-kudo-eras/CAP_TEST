@@ -1,7 +1,4 @@
 Name="test-name"
-USER_ID="shun"
-TYPE="sign-up" # sign-up | forgot-password
-ID="test-id"
 
 BODY='{"name":"'$Name'"}'
 

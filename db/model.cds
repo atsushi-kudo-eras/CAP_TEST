@@ -8,5 +8,6 @@ using {
 
 entity Users : managed {
   key ID   : UUID;
+      id   : String;
       name : String;
 }
