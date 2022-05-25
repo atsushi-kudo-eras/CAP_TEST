@@ -10,3 +10,8 @@ entity Users : managed {
   key ID   : UUID;
       name : String;
 }
+
+entity RawMaterials : managed {
+  key ID   : UUID;
+      name : String;
+}
