@@ -38,5 +38,9 @@ module.exports = (service) => {
     console.log("CREATE : user", user);
   });
 
-  service.after("READ", "Users", (users, test) => {});
+  //  GET : /test/Users
+  service.after("READ", "Users", (users) => {
+    console.log(users);
+    users[0].name = "test-test";
+  });
 };

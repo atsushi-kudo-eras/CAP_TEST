@@ -1,6 +1,6 @@
 using my.application as my from '../db/model';
 
-service TestService {
+service AppService {
   entity Users        as projection on my.Users;
   entity RawMaterials as projection on my.RawMaterials;
 }
